@@ -16,9 +16,9 @@ function CreateTaskForm() {
 		setTitle('')
 	}
 	return (
-		<form>
-			<input type="text" placeholder='Enter text task' value={title} onChange={e => setTitle(e.target.value)}/>
-			<button type='submit' onClick={handleSubmit}>Add task</button>
+		<form className='input-group mb-3'>
+			<input className='form-control' type="text" placeholder='Enter text task' value={title} onChange={e => setTitle(e.target.value)}/>
+			<button className='btn btn-primary btn-sm' type='submit' onClick={handleSubmit}>Add task</button>
 		</form>
 	)
 }

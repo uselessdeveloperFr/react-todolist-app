@@ -5,7 +5,7 @@ import TaskList from "./TaskList";
 function App() {
 
 	return (
-		<div className="App">
+		<div className="container">
 			<CreateTaskForm/>
 			<TaskList/>
 		</div>

@@ -32,12 +32,12 @@ function TaskList() {
 	}
 
 	return (
-		<ul>
+		<ul className='list-group'>
 			{tasks.map(task => (
-				<li key={task.title}>
+				<li className='list-group-item' key={task.title}>
 					{task.completed ? <s>{task.title}</s> : task.title}
-					<button onClick={() => deleteTask(task.id)}>Delete</button>
-					<button onClick={() => onToggleDone(task.id,!task.completed)}>Done</button>
+					<button className='btn btn-warning btn-sm float-sm-right' onClick={() => deleteTask(task.id)}>Delete</button>
+					<button className='btn btn-success btn-sm float-sm-right' onClick={() => onToggleDone(task.id,!task.completed)}>Done</button>
 				</li>
 			))}
 		</ul>
